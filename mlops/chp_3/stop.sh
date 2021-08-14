@@ -1,0 +1,1 @@
+docker rm -f image_classification

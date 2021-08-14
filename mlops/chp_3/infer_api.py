@@ -8,10 +8,8 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 
 # Give local path to your models and labels
-model_path = (
-    "/Users/vaibhavsatpathy/Documents/products/aikosh/mlops/chp_2/model_intel.h5"
-)
-labels_path = "/Users/vaibhavsatpathy/Documents/products/aikosh/mlops/chp_2/labels.json"
+model_path = "/app/model_intel.h5"
+labels_path = "/app/labels.json"
 
 # Read the labels
 with open(labels_path, "r") as f:
