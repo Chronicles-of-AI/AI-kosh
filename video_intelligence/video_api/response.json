@@ -1,0 +1,310 @@
+{
+    "@type": "type.googleapis.com/google.cloud.videointelligence.v1.AnnotateVideoResponse",
+    "annotationResults": [
+        {
+            "inputUri": "/chronicles_of_ai/video_intelligence/pets.mp4",
+            "segment": {
+                "endTimeOffset": "8.960s",
+                "startTimeOffset": "0s"
+            },
+            "segmentLabelAnnotations": [
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "sports",
+                            "entityId": "/m/06ntj",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "obedience training",
+                        "entityId": "/m/0296c5",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.33948272,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "description": "animal",
+                        "entityId": "/m/0jbk",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.9390721,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "animal",
+                            "entityId": "/m/0jbk",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "pet",
+                        "entityId": "/m/068hy",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.90995145,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "person",
+                            "entityId": "/m/01g317",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "dog walking",
+                        "entityId": "/m/02w8p8p",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.97784346,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "pet",
+                            "entityId": "/m/068hy",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "dog",
+                        "entityId": "/m/0bt9lr",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.99343556,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "description": "leash",
+                        "entityId": "/m/03011x",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.7312231,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "dog",
+                            "entityId": "/m/0bt9lr",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "puppy",
+                        "entityId": "/m/0d7s3w",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.7204473,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "shotLabelAnnotations": [
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "sports",
+                            "entityId": "/m/06ntj",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "obedience training",
+                        "entityId": "/m/0296c5",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.33948272,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "description": "animal",
+                        "entityId": "/m/0jbk",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.9390721,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "animal",
+                            "entityId": "/m/0jbk",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "pet",
+                        "entityId": "/m/068hy",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.90995145,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "person",
+                            "entityId": "/m/01g317",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "dog walking",
+                        "entityId": "/m/02w8p8p",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.97784346,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "pet",
+                            "entityId": "/m/068hy",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "dog",
+                        "entityId": "/m/0bt9lr",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.99343556,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "description": "leash",
+                        "entityId": "/m/03011x",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.69609076,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "categoryEntities": [
+                        {
+                            "description": "dog",
+                            "entityId": "/m/0bt9lr",
+                            "languageCode": "en-US"
+                        }
+                    ],
+                    "entity": {
+                        "description": "puppy",
+                        "entityId": "/m/0d7s3w",
+                        "languageCode": "en-US"
+                    },
+                    "segments": [
+                        {
+                            "confidence": 0.7283222,
+                            "segment": {
+                                "endTimeOffset": "8.960s",
+                                "startTimeOffset": "0s"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
