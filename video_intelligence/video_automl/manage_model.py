@@ -1,5 +1,6 @@
 from google.cloud import automl_v1beta1 as automl
 
+# TODO: Update the variable values
 project_id = "chronicles-of-ai"
 dataset_id = "VCN404924293986648064"
 display_name = "HumanActionsModel_v1"
@@ -35,7 +36,7 @@ def get_model_details(model_id: str):
     # Get the full path of the model.
     model_full_id = client.model_path(project_id, "us-central1", model_id)
     model = client.get_model(name=model_full_id)
-
+    print(model)
     # Retrieve deployment state.
     if model.deployment_state == automl.Model.DeploymentState.DEPLOYED:
         deployment_state = "deployed"
@@ -78,12 +79,16 @@ def delete_model(project_id: str, model_id: str):
     return response.operation.name
 
 
-operation_id = create_model(
-    project_id=project_id,
-    dataset_id=dataset_id,
-    display_name=display_name,
-)
-model_id = ""
-get_model_details(model_id=model_id)
-get_all_models(project_id=project_id)
-operation_id = delete_model(project_id=project_id, model_id=model_id)
+# TODO: Uncomment the function to start training AutoML model
+# operation_id = create_model(
+#     project_id=project_id,
+#     dataset_id=dataset_id,
+#     display_name=display_name,
+# )
+# model_id = "VCN7804691974744702976"
+# TODO: Uncomment the function to get details of a trained model
+# get_model_details(model_id=model_id)
+# TODO: Uncomment the function to get all the trained model under a project
+# get_all_models(project_id=project_id)
+# TODO: Uncomment the function to delete the trained model
+# operation_id = delete_model(project_id=project_id, model_id=model_id)

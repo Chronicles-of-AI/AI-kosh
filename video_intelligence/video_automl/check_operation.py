@@ -5,17 +5,6 @@ client = automl.AutoMlClient()
 
 
 def get_operation_details(operation_id: str):
-    """[Operations Status in GCP]
-
-    Args:
-        operation_id (str): [Unique Identifier for an Operation]
-
-    Raises:
-        error: [Error]
-
-    Returns:
-        [dict]: [Status]
-    """
     try:
         response = client._transport.operations_client.get_operation(operation_id)
         if response.done:
@@ -38,11 +27,6 @@ def get_operation_details(operation_id: str):
         raise error
 
 
-# operation_id = (
-#     "projects/53578230421/locations/us-central1/operations/VCN2720329480949202944"
-# )
-operation_id = (
-    "projects/53578230421/locations/us-central1/operations/VCN7726784154213285888"
-)
+operation_id = "LONG_RUNNING_OPERATION_ID"
 status = get_operation_details(operation_id=operation_id)
 print(f"operation status : {status}")

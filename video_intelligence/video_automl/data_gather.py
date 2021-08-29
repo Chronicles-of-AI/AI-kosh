@@ -2,9 +2,17 @@ from pytube import YouTube
 import os
 import pandas as pd
 
+# PATH to the human action video dataset csv
 path = "/Users/arpitjain/Documents/POC/AI-kosh/video_intelligence/video_automl/annotations/human_action_dataset.csv"
-
+# PATH to save the videos downloaded from youtube
+local_dir_path_to_save_videos = (
+    "/Users/arpitjain/Documents/POC/AI-kosh/video_intelligence/video_automl/data"
+)
+# Path to save annotation details
+annotation_csv_path = "/Users/arpitjain/Documents/POC/AI-kosh/video_intelligence/video_automl/annotations/annotation.csv"
+# Static url for youtube
 static_url = "https://www.youtube.com/watch?v="
+# Cloud Storage to save the video data
 gcs_bucket_uri = "gs://coa_video_ai_automl/"
 
 
@@ -29,7 +37,7 @@ def downloadYouTube(videourl, path):
         return None
 
 
-def read_csv(path: str):
+def read_csv(path: str, video_download_path: str, annotation_csv_path: str):
     gcs_uri_list = []
     label_list = []
     start_time_list = []
@@ -40,7 +48,7 @@ def read_csv(path: str):
         youtube_url = f"{static_url}{video_id}"
         local_video_name = downloadYouTube(
             videourl=youtube_url,
-            path="/Users/arpitjain/Documents/POC/AI-kosh/video_intelligence/video_automl/data",
+            path=video_download_path,
         )
         print(f"Downloading video: {local_video_name}")
         if local_video_name is not None:
@@ -58,9 +66,11 @@ def read_csv(path: str):
         "end_time": end_time_list,
     }
     temp_df = pd.DataFrame(master_data)
-    temp_df.to_csv(
-        "/Users/arpitjain/Documents/POC/AI-kosh/video_intelligence/video_automl/annotations/annotation.csv"
-    )
+    temp_df.to_csv(annotation_csv_path)
 
 
-read_csv(path=path)
+read_csv(
+    path=path,
+    video_download_path=local_dir_path_to_save_videos,
+    annotation_csv_path=annotation_csv_path,
+)

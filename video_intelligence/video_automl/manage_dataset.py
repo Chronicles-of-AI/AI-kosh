@@ -1,5 +1,6 @@
 from google.cloud import automl_v1beta1 as automl
 
+# TODO: Update the variable values
 project_id = "chronicles-of-ai"
 dataset_name = "humanActions"
 annotation_csv_uri = "gs://coa_video_ai_automl/annotation_master.csv"
@@ -79,10 +80,14 @@ def delete_dataset(project_id: str, dataset_id: str):
     print("Dataset deleted. {}".format(response.result()))
 
 
+# TODO: Uncomment the function to create new dataset
 # dataset_id = create_dataset(project_id=project_id, display_name=dataset_name)
 # dataset_id = "VCN404924293986648064"
+# TODO: Uncomment the function import data to the new dataset created or existing dataset
 # import_dataset_operation_id = import_dataset(
 #     project_id=project_id, dataset_id=dataset_id, path=annotation_csv_uri
 # )
+# TODO: Uncomment the function to get a list of all the datasets in the project
 # list_datasets(project_id=project_id)
+# TODO: Uncomment the function to delete a dataset
 # delete_dataset(project_id=project_id, dataset_id=dataset_id)
