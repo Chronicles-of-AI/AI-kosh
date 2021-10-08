@@ -1,0 +1,1 @@
+docker rm -f text_classification
