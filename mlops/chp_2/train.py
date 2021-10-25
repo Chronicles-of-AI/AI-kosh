@@ -83,7 +83,7 @@ def train(dataset_path, batch_size, epochs, input_shape):
         steps_per_epoch=(len(all_images) // batch_size),
         epochs=epochs,
     )
-    model.save(output_dir + "model_intel.h5")
+    model.save(os.path.join(output_dir, "models"))
 
 
 dataset_path = (
